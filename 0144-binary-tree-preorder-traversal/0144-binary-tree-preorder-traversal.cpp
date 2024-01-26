@@ -14,7 +14,7 @@ public:
     vector<int> gTemp;
     vector<int> preorderTraversal(TreeNode* root) {
         if(root==NULL)
-            return gTemp;
+            return vector<int>{};
         
         gTemp.push_back(root->val);
         preorderTraversal(root->left);
